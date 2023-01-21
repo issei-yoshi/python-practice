@@ -27,3 +27,35 @@ print(type(byte_fruit))
 str_fruit = byte_fruit.decode('utf-8')
 print(str_fruit)
 print(type(str_fruit))
+
+
+msg = 'ABCDEABC'
+print(msg.count('ABC'))
+
+print(msg.startswith('ABDE'))
+print(msg.endswith('C'))
+
+
+msg = ' ABC '
+print(msg)
+print(msg.strip())
+
+msg = 'ABCDEFABC'
+print(msg.strip('CBA'))
+print(msg.lstrip('CBA'))
+print(msg.rstrip('CBA'))
+
+
+msg = 'abcABC'
+msg_u = msg.upper()
+msg_l = msg.lower()
+msg_s = msg.swapcase()
+print(msg_u, msg_l, msg_s)
+
+
+msg = 'ABCDEABC'
+msg_r = msg.replace('ABC', 'FFF', 1)
+print(msg_r)
+
+msg = 'hello world'
+print(msg.capitalize())
