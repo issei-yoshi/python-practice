@@ -59,3 +59,26 @@ print(msg_r)
 
 msg = 'hello world'
 print(msg.capitalize())
+
+
+msg = 'hello, my name is Issei'
+print(msg[1:10:3])
+print('hello {}'.format('Taro'))
+name = 'Jiro'
+print(f'hello {name}')
+
+
+msg = 'apple'
+print(msg.islower())
+print(msg.isupper())
+
+
+msg = 'ABCDEABC'
+print(msg.find('ABC'))
+print(msg.rfind('ABC'))
+
+print(msg.index('ABC'))
+print(msg.rindex('ABC'))
+
+print(msg.rfind('ABCE'))
+# print(msg.index('ABCE')) #Error occurred
