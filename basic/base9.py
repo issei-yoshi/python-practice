@@ -11,19 +11,44 @@
 # list_a[1][2] = 'lemon'
 # print(list_a)
 
-list_a = [1, 2, 3, 4, 5]
 
-list_b = list_a[1:4:2]
-print(list_b)
 
-list_a.append('apple')
+# list_a = [1, 2, 3, 4, 5]
+
+# list_b = list_a[1:4:2]
+# print(list_b)
+
+# list_a.append('apple')
+# print(list_a)
+
+# list_a.extend(['banana', 'melon'])
+# print(list_a)
+
+# list_a.insert(1, 'grape')
+# print(list_a)
+
+# list_a.clear()
+# print(list_a)
+list_a = [0,1,1,2,2,3,3,3,4]
+list_a.remove(3)
 print(list_a)
 
-list_a.extend(['banana', 'melon'])
+value = list_a.pop()
+print(list_a, value)
+
+print(list_a.count(3))
+
+print(list_a.index(2))
+
+
+print(list_a)
+list_b = list_a.copy()
+list_b[0] = 'AAAAA'
 print(list_a)
 
-list_a.insert(1, 'grape')
+# list_a.sort()
+list_a = sorted(list_a)
 print(list_a)
 
-list_a.clear()
+list_a.reverse()
 print(list_a)
