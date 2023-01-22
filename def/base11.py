@@ -5,3 +5,20 @@ print(list_b)
 
 list_c = [x for x in range(100) if x % 7 == 0]
 print(list_c)
+
+dict_a = {
+    'a': 'Apple',
+    'b': 'Banana'
+}
+
+list_c = [dict_a.get(x) for x in list_a if type(x) == str]
+print(list_c)
+
+def func(n):
+    for x in range(2, n):
+        if n % x == 0:
+            return True
+    return False
+
+list_a = [x for x in range(100) if func(x) == False]
+print(list_a)
