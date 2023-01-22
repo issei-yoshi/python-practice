@@ -12,5 +12,9 @@ except IndexError as e:
   print('IndexError発生')
 except Exception as e:
   print('Exception:', e, type(e))
+else:
+  print('Else process')
+finally:
+  print('either way')
 
 print('done process')
